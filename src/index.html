@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/gt-america-trial"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="bg-black text-white">
+      <nav class="container mx-auto py-5 px-2.5">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center space-x-2">
+            <img src="./img/logo-text.png" alt="Logo" class="h-7 w-auto lg:h-9" />
+            <span>|</span>
+            <a href="#" class="text-xl lg:text-2xl">Help Center</a>
+          </div>
+          <div class="flex items-center space-x-1.5 lg:hidden">
+            <i class="bx bx-search text-2xl"></i>
+            <i class="bx bx-menu text-3xl"></i>
+          </div>
+          <div class="hidden lg:flex space-x-4 text-xl font-semibold">
+            <button type="button" class="px-6 py-2 border-2 rounded-md">
+              Submit a request
+            </button>
+            <button type="button" class="px-6 py-2 bg-primary rounded-md">
+              Sign in
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="bg-secondary">
+        <div class="container mx-auto h-96 flex flex-col justify-center items-center">
+          <h1 class="text-4xl mb-8 tracking-tight lg:text-7xl">How can we help?</h1>
+          <label for="search" class="relative lg:w-1/2">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search"
+              class="px-4 py-3 w-72 border border-black rounded-sm lg:w-full lg:py-5"
+            >
+            <i
+              class='bx bx-right-arrow-alt text-3xl absolute top-2.5 right-2 lg:top-4'
+            ></i>
+          </label>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-2.5 py-28 space-y-20 lg:px-28 lg:space-y-0 lg:flex lg:flex-wrap lg:space-x-2 lg:gap-y-20">
+        <div class="flex space-x-4 lg:max-w-lg">
+          <div>
+            <img src="./img/abstract.png" alt="Item 1" class="h-20 lg:h-24">
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-semibold mb-3 lg:text-3xl">Using Abstract</h3>
+            <p class="mb-2 lg:text-2xl">
+              Abstract lets you manage, version, and document your designs in one place.
+            </p>
+            <button
+              type="button"
+              class="text-primary flex items-center space-x-2"
+            >
+              <span>Learn More</span>
+              <i class='bx bx-right-arrow-alt text-xl'></i>
+            </button>
+          </div>
+        </div>
+        <div class="flex space-x-4 lg:max-w-lg">
+          <div>
+            <img src="./img/account.png" alt="Item 2" class="h-20 lg:h-24">
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-semibold mb-3 lg:text-3xl">Manage your account</h3>
+            <p class="mb-2 lg:text-2xl">
+              Configure your account settings, such as your email, profile details, and password.
+            </p>
+            <button
+              type="button"
+              class="text-primary flex items-center space-x-2"
+            >
+              <span>Learn More</span>
+              <i class='bx bx-right-arrow-alt text-xl'></i>
+            </button>
+          </div>
+        </div>
+        <div class="flex space-x-4 lg:max-w-lg">
+          <div>
+            <img src="./img/puzzle.png" alt="Item 3" class="h-20 lg:h-24">
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-semibold mb-3 lg:text-3xl">Manage organizations, teams, and projects</h3>
+            <p class="mb-2 lg:text-2xl">
+              Use Abstract organizations, teams, and projects to organize your people and your work.
+            </p>
+            <button
+              type="button"
+              class="text-primary flex items-center space-x-2"
+            >
+              <span>Learn More</span>
+              <i class='bx bx-right-arrow-alt text-xl'></i>
+            </button>
+          </div>
+        </div>
+        <div class="flex space-x-4 lg:max-w-lg">
+          <div>
+            <img src="./img/money.png" alt="Item 4" class="h-20 lg:h-24">
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-semibold mb-3 lg:text-3xl">Manage billing</h3>
+            <p class="mb-2 lg:text-2xl">
+              Change subscriptions and payment details.
+            </p>
+            <button
+              type="button"
+              class="text-primary flex items-center space-x-2"
+            >
+              <span>Learn More</span>
+              <i class='bx bx-right-arrow-alt text-xl'></i>
+            </button>
+          </div>
+        </div>
+        <div class="flex space-x-4 lg:max-w-lg">
+          <div>
+            <img src="./img/key.png" alt="Item 5" class="h-20 lg:h-24">
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-semibold mb-3 lg:text-3xl">Authenticate to Abstract</h3>
+            <p class="mb-2 lg:text-2xl">
+              Set up and configure SSO, SCIM, and Just-in-Time provisioning.
+            </p>
+            <button
+              type="button"
+              class="text-primary flex items-center space-x-2"
+            >
+              <span>Learn More</span>
+              <i class='bx bx-right-arrow-alt text-xl'></i>
+            </button>
+          </div>
+        </div>
+        <div class="flex space-x-4 lg:max-w-lg">
+          <div>
+            <img src="./img/message.png" alt="Item 6" class="h-20 lg:h-24">
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-semibold mb-3 lg:text-3xl">Abstract support</h3>
+            <p class="mb-2 lg:text-2xl">
+              Get in touch with a human.
+            </p>
+            <button
+              type="button"
+              class="text-primary flex items-center space-x-2"
+            >
+              <span>Learn More</span>
+              <i class='bx bx-right-arrow-alt text-xl'></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black text-white">
+      <div class="container mx-auto px-2.5 py-12 lg:flex lg:justify-between lg:px-12 lg:items-end">
+        <div class="flex flex-wrap gap-y-5 mb-16 lg:gap-20">
+          <div class="w-1/2 lg:w-auto">
+            <h3 class="text-2xl font-semibold mb-2">Abstract</h3>
+            <ul>
+              <li><a href="#">Start Trial</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Download</a></li>
+            </ul>
+          </div>
+          <div class="w-1/2 lg:w-auto">
+            <h3 class="text-2xl font-semibold mb-2">Resources</h3>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Release Notes</a></li>
+              <li><a href="#">Status</a></li>
+            </ul>
+          </div>
+          <div class="w-1/2 lg:w-auto">
+            <h3 class="text-2xl font-semibold mb-2">Community</h3>
+            <ul>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Dribbble</a></li>
+              <li><a href="#">Podcast</a></li>
+            </ul>
+          </div>
+          <div class="w-1/2 lg:w-auto">
+            <h3 class="text-2xl font-semibold mb-2">Company</h3>
+            <ul class="mb-5">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Legal</a></li>
+            </ul>
+
+            <p>
+              <strong>Contact Us</strong>
+            </p>
+            <a href="#">info@abstract.com</a>
+          </div>
+        </div>
+        <div class="text-lg">
+          <img src="./img/logo.png" alt="Logo" class="h-10 mb-6">
+          <p>© Copyright 2023</p>
+          <p>Abstract Studio Design, Inc.</p>
+          <p>All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

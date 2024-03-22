@@ -1,0 +1,14 @@
+{
+  "name": "frontend-practice-abstract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
+  },
+  "author": "euxzy",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
